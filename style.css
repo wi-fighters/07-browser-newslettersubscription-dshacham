@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.popup {
+    width: 40%;
+    height: 45%;
+    background-color: orange;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+span {
+    align-self: flex-end;
+    margin-right: 0.2rem;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+label, #email, #submit {
+    margin: 1.3rem;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+
+#email {
+    width: 80%;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+#submit {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    background-color: red;
+    color: white;
+    font-size: 1.1rem;
+}
