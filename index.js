@@ -2,16 +2,17 @@
     const section = document.querySelector('section');
     const close = document.querySelector('span');
 
-    const subPop = function (event) {
+    const showPop = function (event) {
         if (event.clientY < 10) {
-            section.classList.add('popup');
+            section.classList.remove('hidden');
+
         };
     };
-    document.body.addEventListener('mousemove', subPop, false);
 
     const closePop = function () {
-        section.classList.remove('popup');
+        section.classList.add('hidden');
     };
 
+    document.body.addEventListener('mousemove', showPop, false);
     close.addEventListener('click', closePop, false);
 })();
