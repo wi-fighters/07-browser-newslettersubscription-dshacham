@@ -14,5 +14,4 @@
     };
 
     close.addEventListener('click', closePop, false);
-    document.body.addEventListener('click', closePop, false);
 })();
